@@ -33,6 +33,10 @@ class WP_ACNE {
 	 */
 	public static function init() {
 
+		if ( wp_doing_ajax() ) {
+			return;
+		}
+
 		add_action( 'admin_head', array( __CLASS__, 'admin_head' ) );
 
 		$cookies = array(
@@ -79,6 +83,7 @@ class WP_ACNE {
 			'</table>' .
 			'</div>'
 		);
+
 	}
 
 	/**
