@@ -63,7 +63,7 @@ class WP_ACNE {
 			'<div class="wp-acne">' .
 			'<h2>WP ACNE | Admin Cookie Nonce Expose</h2>' .
 			'<h3>Nonce</h3>' .
-			'<p>_wpnonce ' . esc_html( wp_create_nonce() ) . '</p>' .
+			'<p>Default -1 action ' . esc_html( wp_create_nonce() ) . '</p>' .
 			'<h3>Cookies</h3>' .
 			'<table>' .
 			'<thead>' .
